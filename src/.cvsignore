@@ -1,0 +1,10 @@
+*.cma
+*.cmi
+*.cmo
+*.cmx
+*.cmxa
+test
+example
+csvtool
+ocaml-csv-*.tar.gz
+html
