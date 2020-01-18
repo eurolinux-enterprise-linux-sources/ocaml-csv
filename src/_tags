@@ -1,0 +1,26 @@
+# OASIS_START
+# DO NOT EDIT (digest: 990159b2445be5f3ae423215ba83a477)
+# Ignore VCS directories, you can use the same kind of rule outside 
+# OASIS_START/STOP if you want to exclude directories that contains 
+# useless stuff for the build process
+<**/.svn>: -traverse
+<**/.svn>: not_hygienic
+".bzr": -traverse
+".bzr": not_hygienic
+".hg": -traverse
+".hg": not_hygienic
+".git": -traverse
+".git": not_hygienic
+"_darcs": -traverse
+"_darcs": not_hygienic
+# Library csv
+"src/csv.cmxs": use_csv
+# Executable csvtool
+<examples/csvtool.{native,byte}>: use_csv
+# Executable example
+<examples/example.{native,byte}>: use_csv
+<examples/*.ml{,i}>: use_csv
+# Executable test
+<tests/test.{native,byte}>: use_csv
+<tests/*.ml{,i}>: use_csv
+# OASIS_STOP

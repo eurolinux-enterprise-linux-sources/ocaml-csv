@@ -1,0 +1,11 @@
+# OASIS_START
+# DO NOT EDIT (digest: ed939aaabd3be509b2f452967332935f)
+version = "1.2.3"
+description = "A pure OCaml library to read and write CSV files."
+archive(byte) = "csv.cma"
+archive(byte, plugin) = "csv.cma"
+archive(native) = "csv.cmxa"
+archive(native, plugin) = "csv.cmxs"
+exists_if = "csv.cma"
+# OASIS_STOP
+

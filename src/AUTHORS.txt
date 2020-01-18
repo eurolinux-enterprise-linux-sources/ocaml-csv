@@ -1,0 +1,6 @@
+(* OASIS_START *)
+(* DO NOT EDIT (digest: 5c0fb2d80f6bf9a6267b60d19cfd2758) *)
+Authors of csv
+Richard Jones
+Christophe Troestler
+(* OASIS_STOP *)
