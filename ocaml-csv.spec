@@ -3,16 +3,18 @@
 
 Name:           ocaml-csv
 Version:        1.2.3
-Release:        5%{?dist}
+Release:        8%{?dist}
 Summary:        OCaml library for reading and writing CSV files
 
 License:        LGPLv2+
 URL:            https://forge.ocamlcore.org/projects/csv/
 Source0:        https://forge.ocamlcore.org/frs/download.php/978/csv-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-ExcludeArch:    sparc64 s390 s390x
+
+ExcludeArch:    s390
 
 BuildRequires:  ocaml >= 4.00.1
+BuildRequires:  ocaml-ocamlbuild
 BuildRequires:  ocaml-ocamldoc
 BuildRequires:  ocaml-findlib-devel >= 1.3.3-3
 BuildRequires:  ocaml-extlib-devel >= 1.5.3-2
@@ -90,6 +92,18 @@ make test
 
 
 %changelog
+* Sat Sep 23 2017 Richard W.M. Jones <rjones@redhat.com> - 1.2.3-8
+- Remove ExcludeArch and build on s390x.
+  related: rhbz#1447992
+
+* Fri Sep 22 2017 Richard W.M. Jones <rjones@redhat.com> - 1.2.3-7
+- Rebuild for OCaml 4.05.0
+- Add missing/implicit dependency on ocamlbuild.
+  resolves: rhbz#1447992
+
+* Fri Aug 08 2014 Richard W.M. Jones <rjones@redhat.com> - 1.2.3-6
+- Resolves: rhbz#1125623
+
 * Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.2.3-5
 - Mass rebuild 2013-12-27
 
