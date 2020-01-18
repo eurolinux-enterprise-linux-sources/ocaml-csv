@@ -3,7 +3,7 @@
 
 Name:           ocaml-csv
 Version:        1.2.3
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        OCaml library for reading and writing CSV files
 
 License:        LGPLv2+
@@ -90,6 +90,9 @@ make test
 
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.2.3-5
+- Mass rebuild 2013-12-27
+
 * Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.3-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
