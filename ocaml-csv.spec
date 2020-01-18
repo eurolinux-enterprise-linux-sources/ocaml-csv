@@ -3,7 +3,7 @@
 
 Name:           ocaml-csv
 Version:        1.2.3
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        OCaml library for reading and writing CSV files
 
 License:        LGPLv2+
@@ -90,6 +90,9 @@ make test
 
 
 %changelog
+* Fri Aug 08 2014 Richard W.M. Jones <rjones@redhat.com> - 1.2.3-6
+- Resolves: rhbz#1125623
+
 * Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.2.3-5
 - Mass rebuild 2013-12-27
 
